@@ -14,7 +14,7 @@ class MyController extends Controller
     */
     public function importExportView()
     {
-    	$dateOfBirth = '1993-06-28';
+    	$dateOfBirth = '2010-06-10';
 		$years = Carbon::parse($dateOfBirth)->age;
        return view('import',['year'=>$years]);
     }
